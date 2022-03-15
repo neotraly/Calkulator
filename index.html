@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    
+    
+</head>
+<script  type="text/javascript">
+        function result1(obj)
+        {
+            var a = Number(obj.num1.value)
+            var m = a*4
+            obj.res.value=m
+            
+        }
+        function result2(obj)
+        {
+            var a1 = Number(obj.num2.value) 
+            var m2 = a1*4
+            obj.res.value=m2
+        }
+        function result3(obj)
+        {
+            var a3 = Number(obj.num3.value) 
+            var m3 = a3*4/1000
+            obj.res.value=m3
+        }
+        function result4(obj)
+        {
+            var a4 = Number(obj.num4.value) 
+            var m4 = a4*4/1000
+            obj.res.value=m4
+        }
+    </script>
+<body>
+  
+    
+    <div class="second">
+        <form action="" name= "form1">
+            <div class="resulttxt">
+                <h5></h5>   
+                <input class="input_main" type="text" size=8 name="res" disabled>
+                
+                <h5>, г</h5></br> 
+            </div>
+          <p> Расчет количества продовольственного сырья, полуфабрикатов, </br>
+              пищевых продуктов для приготовления 4 порций блюда </br>
+              (выход 1 порции совпадает с рецептурой) </p>
+
+           <h5>масса брутто, г</h5><input type="text" size="40" name="num1">
+           <input type="button" value = Рассчитать onclick="result1(form1)">
+           <h5>масса нетто, г</h5><input type="text" size="40" name="num2">
+           <input type="button" value = Рассчитать  onclick="result2(form1)">
+
+           <p> Расчет количества продовольственного сырья, полуфабрикатов, </br>
+            пищевых продуктов для приготовления 4 порций блюда </br>
+            (выход 1 порции отличается с рецептурой) </p>
+
+           <h5>масса брутто, г</h5><input type="text" size="40" name="num3">
+           <input type="button" value = Рассчитать onclick="result3(form1)">
+           <h5>масса нетто, г</h5><input type="text" size="40" name="num4">
+           <input type="button" value = Рассчитать  onclick="result4(form1)">
+            
+        </form>
+        
+    </div>
+</body>
+</html>
