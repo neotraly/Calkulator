@@ -1,2 +1,2 @@
 # Calkulator
-https://neotraly.github.io/Calkulator/index.html/
+https://neotraly.github.io/Calkulator/
