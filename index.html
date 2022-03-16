@@ -25,14 +25,16 @@
         }
         function result3(obj)
         {
+            var a5 = Number(obj.num5.value)
             var a3 = Number(obj.num3.value) 
-            var m3 = a3*4/1000
+            var m3 = (a3*a5/1000) * 4
             obj.res.value=m3
         }
         function result4(obj)
         {
+            var a5 = Number(obj.num5.value)
             var a4 = Number(obj.num4.value) 
-            var m4 = a4*4/1000
+            var m4 = (a4*a5/1000) * 4
             obj.res.value=m4
         }
     </script>
@@ -64,6 +66,8 @@
            <input type="button" value = Рассчитать onclick="result3(form1)">
            <h5>масса нетто, г</h5><input type="text" size="40" name="num4">
            <input type="button" value = Рассчитать  onclick="result4(form1)">
+
+           <h5>Выход грамм</h5><input type="text" size="40" name="num5">
             
         </form>
         
